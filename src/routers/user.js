@@ -64,8 +64,8 @@ router.post('/users/logoutAll', auth, async (req, res)=>{
 })
 
 // get a user prfile, authenticate, send back user profile
-router.get('/users/me', auth ,async (req,res)=>{
-res.send(req.user)
+router.get('/users/me', auth ,async (req , res)=>{
+await res.send(req.user)
 })
 
 
